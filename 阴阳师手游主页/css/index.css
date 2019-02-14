@@ -1,0 +1,3164 @@
+@charset "UTF-8";
+html,body{
+    min-width: 1500px;
+}
+body.noScroll{
+    height: 100%;
+    overflow: hidden;
+}
+#main{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+}
+/*头部导航条*/
+#topBar{
+    position: relative;
+    width: 100%;
+    height: 55px;
+    background: #fbfbfb;
+    z-index: 99;
+}
+#topBar .content{
+    width: 1280px;
+    height: 55px;
+    margin: auto;
+}
+#topBar .content .topLogo{
+    float: left;
+    width: 133px;
+    height: 44px;
+    margin-top: 5px;
+    margin-left: 10px;
+    background-image: url("../img/preIndex/topBar-log.png");
+    background-repeat: no-repeat;
+}
+#topBar .content .yinDao{
+    position: relative;
+    float: left;
+    width: 420px;
+    height: 55px;
+    margin-left: 10px;
+}
+#topBar .content .yinDao .xiYou{
+    width: 420px;
+    height: 55px;
+    background-image: url("../img/preIndex/topyindao.jpg");
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+#topBar .content .yinDao .xiYouTuozhan{
+    position: absolute;
+    width: 960px;
+    height: 0px;
+    top:55px;
+    left: -150px;
+    background-image: url("../img/preIndex/topkuozhan.jpg");
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+#topBar .content .yinDao:hover .xiYou{
+    opacity: 0;
+}
+#topBar .content .yinDao:hover .xiYouTuozhan{
+    height: 250px;
+}
+#topBar .content .timer{
+    position: relative;
+    float: right;
+    width: 100px;
+    height: 55px;
+    overflow: hidden;
+}
+#topBar .content .timer ul{
+    position: absolute;
+    top:0;
+    left: 0px;
+    width: 100px;
+}
+#topBar .content .timer ul li{
+    width: 100px;
+    height: 52px;
+    color: #1c2b36;
+    font-size: 12px;
+    line-height: 53px;
+    border-bottom:3px solid  #fbfbfb;
+    text-align: center;
+}
+#topBar .content .timer ul:hover li{
+    background-image: url("../img/preIndex/topBg.jpg");
+    background-repeat: repeat-x;
+    border-bottom: 3px solid #bc2e2e;
+    color: #bc2e2e ;
+}
+#topBar .content .allGame{
+    position: relative;
+    float: right;
+    width: 115px;
+    height: 52px;
+    color: #bc2e2e;
+    font-size: 12px;
+    line-height: 53px;
+    border-bottom:3px solid  #fbfbfb;
+    padding-left: 10px;
+}
+.allGame:after{
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top:24px;
+    right: 15px;
+    border:5px solid #bc2e2e;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom: none;
+}
+#topBar .content .allGame:hover{
+    background-image: url("../img/preIndex/topBg.jpg");
+    background-repeat: repeat-x;
+    border-bottom: 3px solid #bc2e2e;
+}
+#topBar .content .allGame:hover .catology{
+    height: 445px;
+}
+#topBar .content .allGame .catology{
+    position: absolute;
+    top:55px;
+    left:-1030px;
+    width: 1261px;
+    height: 0px;
+    overflow: hidden;
+    background: #FFFFFF;
+    transition: 0.5s;
+}
+#topBar .content .allGame .catology .cato{
+    float: left;
+    width: 249px;
+    height: 100%;
+    border-right: 1px solid #e6e6e4;
+}
+#topBar .content .allGame .catology .cato .title{
+    width: 100%;
+    height: 40px;
+    background: #ecebed;
+    color: #b52e2f;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 40px;
+    text-indent: 1em;
+}
+#topBar .content .allGame .catology .cato .content{
+    width: 100%;
+    height: 405px;
+    background: #f8f8f8;
+}
+#topBar .content .allGame .catology .cato .content .listTitle{
+    width: 209px;
+    padding-left: 15px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    color:#737273;
+    font-size: 12px;
+}
+#topBar .content .allGame .catology .cato .content .list01{
+    width: 100%;
+    height: auto;
+}
+#topBar .content .allGame .catology .cato .content .list01 .list{
+    float: left;
+    width: 106px;
+    height: auto;
+}
+.bgHot{
+    background-image: url("../img/preIndex/hot.jpg");
+    background-repeat: no-repeat;
+    background-position:87px 9px;
+}
+.bgNew{
+    background-image: url("../img/preIndex/bgNew.jpg");
+    background-repeat: no-repeat;
+    background-position:87px 9px;
+}
+.bgno1{
+    background-image: url("../img/preIndex/bgno1.jpg");
+    background-repeat: no-repeat;
+    background-position:87px 9px;
+}
+.bgHot02{
+    background-image: url("../img/preIndex/hot.jpg");
+    background-repeat: no-repeat;
+    background-position:103px 9px;
+}
+.bgNew02{
+    background-image: url("../img/preIndex/bgNew.jpg");
+    background-repeat: no-repeat;
+    background-position:103px 9px;
+}
+.bgno102{
+    background-image: url("../img/preIndex/bgno1.jpg");
+    background-repeat: no-repeat;
+    background-position:103px 9px;
+}
+#topBar .content .allGame .catology .cato .content .list01 .listLeft{
+    margin-left: 15px;
+}
+#topBar .content .allGame .catology .cato .content .list01 .listRight{
+    margin-left: 10px;
+}
+#topBar .content .allGame .catology .cato .content .list01 li{
+    width: 100%;
+    height: 22px;
+    font-size: 12px;
+    line-height: 27px;
+    color: #5f5e5f;
+
+}
+#topBar .content .allGame .catology .cato .content .list01 li:hover{
+    color: #b52e2f;
+}
+#topBar .content .allGame .catology .cato .content .listJue{
+    height: 200px;
+}
+#topBar .content .allGame .catology .cato .content .listJing{
+    height: 100px;
+}
+#topBar .content .allGame .catology .catoRight{
+    float: right;
+    width: 1010px;
+    height: 100%;
+}
+#topBar .content .allGame .catology .catoRight .tuiJian{
+    float: left;
+    width: 169px;
+    height: 405px;
+    border-right: 1px solid #e6e6e4;
+    background: #f8f8f8;
+}
+#topBar .content .allGame .catology .catoRight .tuiJian .listTitle{
+    width: 209px;
+    padding-left: 35px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    color:#737273;
+    font-size: 12px;
+}
+#topBar .content .allGame .catology .catoRight .tuiJian .listAll{
+    margin-left: 35px;
+    width: 130px;
+    height: auto;
+}
+#topBar .content .allGame .catology .catoRight .tuiJian .listAll li{
+    width: 100%;
+    height: 22px;
+    font-size: 12px;
+    line-height: 27px;
+    color: #5f5e5f;
+}
+#topBar .content .allGame .catology .catoRight .tuiJian .listAll li:hover{
+    color: #b52e2f;
+}
+#topBar .content .allGame .catology .catoRight .newApp{
+    float: left;
+    width: 690px;
+    height: 405px;
+    border-right: 1px solid #e6e6e4;
+    background: #f8f8f8;
+}
+#topBar .content .allGame .catology .catoRight .newApp .listTitle{
+    width: 209px;
+    padding-left: 20px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    color:#737273;
+    font-size: 12px;
+}
+#topBar .content .allGame .catology .catoRight .newApp .listNew{
+    float: left;
+    margin-left: 20px;
+    width: 130px;
+    height: auto;
+}
+#topBar .content .allGame .catology .catoRight .newApp .listNew li{
+    width: 100%;
+    height: 22px;
+    font-size: 12px;
+    line-height: 27px;
+    color: #5f5e5f;
+}
+#topBar .content .allGame .catology .catoRight .newApp .listNew li:hover{
+    color: #b52e2f;
+}
+#topBar .content .allGame .catology .catoRight .newApp .listNew02{
+    float: left;
+    margin-left: 15px;
+    width: 110px;
+    height: auto;
+}
+#topBar .content .allGame .catology .catoRight .newApp .listNew02 li{
+    width: 100%;
+    height: 22px;
+    font-size: 12px;
+    line-height: 27px;
+    color: #5f5e5f;
+}
+#topBar .content .allGame .catology .catoRight .newApp .listNew02 li:hover{
+    color: #b52e2f;
+}
+#topBar .content .allGame .catology .catoRight .end{
+    float: left;
+    width: 149px;
+    height: 405px;
+    background: #f8f8f8;
+}
+#topBar .content .allGame .catology .catoRight .end .listNew02{
+    float: left;
+    margin-left: 15px;
+    width: 110px;
+    height: auto;
+}
+#topBar .content .allGame .catology .catoRight .end .listNew02 li{
+    width: 100%;
+    height: 22px;
+    font-size: 12px;
+    line-height: 27px;
+    color: #5f5e5f;
+}
+#topBar .content .allGame .catology .catoRight .end .listNew02 li:hover{
+    color: #b52e2f;
+}
+#topBar .content .allGame .catology .catoRight .end .listNew02 .wangyiGame{
+    text-indent: 30px;
+    color: #b52e2f ;
+    line-height: 30px;
+    background-image: url("../img/preIndex/sprite.png");
+    background-repeat: no-repeat;
+    background-position: 0px -334px;
+}
+#topBar .content .androidCharge{
+    float: right;
+    width: 70px;
+    height: 52px;
+    color: #1c2b36;
+    font-size: 12px;
+    line-height: 53px;
+    border-bottom:3px solid  #fbfbfb;
+    padding-left: 10px;
+}
+#topBar .content .androidCharge:hover{
+    background-image: url("../img/preIndex/topBg.jpg");
+    background-repeat: repeat-x;
+    border-bottom: 3px solid #bc2e2e;
+}
+
+/*banner部分*/
+#banner{
+    position: relative;
+    width: 100%;
+    height: 585px;
+    background-image: url("../img/index/main_banner.jpg");
+    overflow: hidden;
+}
+
+#banner .nav{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    transition: 0.5s;
+    z-index: 99999;
+
+}
+#banner .nav.fix{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+#banner .nav .background{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    opacity: 0;
+}
+#banner .nav ul.navLine{
+    float: right;
+    height: 100%;
+    padding-right: 20px;
+}
+#banner .nav ul.navLine li.noExp{
+    position: relative;
+    float: left;
+    width: 115px;
+    height: 65px;
+    margin-top: 35px;
+}
+#banner .nav ul.navLine li.bg{
+    background-image: url("../img/index/interval.png");
+    background-repeat: no-repeat;
+    background-position: 100px 6px;
+}
+#banner .nav ul.navLine li a.aTop{
+    display: block;
+    width: 100px;
+    height: 65px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 16px;
+    color: #000000;
+    font-family: "Microsoft YaHei", "微软雅黑", tahoma, arial, simhei, "黑体";
+}
+#banner .nav ul.navLine .rightLi{
+    position: relative;
+    float: left;
+    width: 230px;
+    height: 65px;
+    margin-top: 35px;
+}
+#banner .nav ul.navLine .rightLi ul li{
+    float: left;
+    width: 115px;
+    height:65px ;
+}
+.hide{
+    display: none;
+}
+#banner .nav ul.navLine li.navTop a:hover{
+    color: #cc4336;
+}
+#banner .nav ul.navLine .rightLi .navExpan{
+    position: absolute;
+    top:65px;
+    right:-20px;
+    background: #e1ebeb;
+    width: 1400px;
+    height: 200px;
+    display: none;
+}
+#banner .nav ul.navLine .rightLi ul .subNav{
+    position: relative;
+}
+#banner .nav ul.navLine .rightLi .subNav .newLink{
+    position: absolute;
+    z-index: 9;
+    display: none;
+}
+#banner .nav ul.navLine .rightLi .subNav .newLink01{
+    top:65px;
+    right: -135px;
+    width: 1200px;
+    height: 200px;
+}
+#banner .nav ul.navLine .rightLi .subNav .newLink .newLinkTab{
+    position: relative;
+    float: right;
+    margin-top: 35px;
+    width: 215px;
+    height: 165px;
+    transition: 0.5s;
+}
+#banner .nav ul.navLine .rightLi .subNav .newLink .newLinkInterval{
+    float: right;
+    margin-top: 35px;
+    width: 1px;
+    height: 100px;
+    background: #c8d0d0;
+}
+#banner .nav ul.navLine .rightLi .subNav .newLink .newLinkTab p{
+    height: 30px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 70px;
+    color: #7d7f7f;
+
+}
+#banner .nav ul.navLine .rightLi .subNav .newLink .line1-1{
+    background-image: url("../img/index/pic.png");
+    background-repeat: no-repeat;
+    background-position:72px 0px;
+}
+#banner .nav ul.navLine .rightLi .subNav .newLink .line1-2{
+    background-image: url("../img/index/cos.png");
+    background-repeat: no-repeat;
+    background-position:72px 0px;
+}
+#banner .nav ul.navLine .rightLi .subNav .newLink02{
+    top:65px;
+    right: -20px;
+    width: 1225px;
+    height: 200px;
+}
+#banner .nav ul.navLine .rightLi .subNav .newLink .line2-1{
+    background-image: url("../img/index/forum.png");
+    background-repeat: no-repeat;
+    background-position:72px 0px;
+}
+#banner .nav ul.navLine .rightLi .subNav .newLink .line2-2{
+    background-image: url("../img/index/tieba.png");
+    background-repeat: no-repeat;
+    background-position:72px 0px;
+}
+#banner .nav ul.navLine .rightLi .subNav .newLink .newLinkTab .linkIcon{
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    margin-left: -44px;
+    width: 88px;
+    height: 88px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 88px 88px;
+}
+#banner .nav ul.navLine .rightLi .subNav .newLink .newLinkTab .wb{
+    background-image: url("../img/index/wb_2cdebbf.png");
+}
+#banner .nav ul.navLine .rightLi .subNav .newLink .newLinkTab .wx{
+    background-image: url("../img/index/wx_d99aea4.jpg");
+}
+#banner .nav ul.navLine .rightLi .subNav .newLink .qqList{
+    float: right;
+    margin-top: 35px;
+    width: 260px;
+    height: 160px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#banner .nav ul.navLine .rightLi .subNav .newLink .qqList ul{
+    float: left;
+    width: 110px;
+    height: 120px;
+}
+#banner .nav ul.navLine .rightLi .subNav .newLink .qqList ul li{
+    width: 115px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    color: #7a7b7b;
+}
+#banner .nav ul.navLine .rightLi .subNav .newLink .qqList p{
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #7a7b7b;
+}
+#banner .nav ul.navLine .rightLi .subNav .newLink .move:hover{
+    margin-top: 20px;
+    height: 115px;
+}
+.exp:after{
+    content: "";
+    position: absolute;
+    display: none;
+    bottom: 0px;
+    left: 40px;
+    width: 0px;
+    height: 0px;
+    border: 11px solid #e1ebeb;
+    border-top: none;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    transition: 0.5s;
+}
+#banner .nav ul.navLine .rightLi ul .subNav:hover .exp:after{
+   display: block;
+}
+#banner .nav ul.fixLogo{
+    position: relative;
+    float: left;
+    height: 100%;
+}
+#banner .nav ul.fixLogo .fixLogoLeft{
+    float: left;
+    height: 74px;
+    margin: 12px;
+    margin-left: 15px;
+
+}
+#banner .nav ul.fixLogo .fixLogoLeft p{
+    width: 18px;
+    height: 74px;
+    float: left;
+    color: #4d4e4e;
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 3px;
+    margin-right: 8px;
+}
+#banner .nav ul.fixLogo  .interval{
+    float: left;
+    width: 1px;
+    height: 74px;
+    margin-top: 12px;
+    background: #8C8C8C;
+}
+#banner .nav ul.fixLogo .fixLogoRight{
+    float: left;
+    height: 74px;
+    margin: 12px;
+    margin-left: 15px;
+}
+#banner .nav ul.fixLogo .fixLogoRight img{
+    float: left;
+}
+#banner .nav ul.fixLogo .fixLogoRight div{
+    float: left;
+    color: #4d4e4e;
+}
+#banner .nav ul.fixLogo .fixLogoRight .pTop{
+    margin-top: 12px;
+    margin-left: 15px;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: bold;
+}
+#banner .nav ul.fixLogo .fixLogoRight .pBottom{
+    margin-top: 5px;
+    margin-left: 15px;
+    font-size: 16px;
+    line-height: 32px;
+    display: inline;
+}
+
+/*banner  logo*/
+#banner .logoLeftTop{
+    position: absolute;
+    top:30px;
+    left: -200px;
+    width: 70px;
+    height: 199px;
+    background-image: url("../img/index/logo_7920691.png");
+    opacity: 0;
+    transition: 1s;
+    transform: scale(1);
+    z-index: 99;
+}
+#banner .logoLeftTop.shrank{
+    transform: scale(0);
+}
+
+/*banner change*/
+#banner .changeWrap{
+    position: absolute;
+    top:0px;
+    left: 50%;
+    width: 1200px;
+    height: 583px;
+    margin-left: -600px;
+}
+#banner .change{
+    position: absolute;
+    top:0px;
+    left: 70px;
+    width: 730px;
+    height:585px;
+}
+#banner .change .role{
+    position: absolute;
+    transition: 1.5s;
+
+}
+#banner .change .role01{
+    left: 0px;
+    bottom: 2px;
+    width: 423px;
+    height: 544px;
+    background: url("../img/index/role1_2b77a63.png") no-repeat;
+    opacity: 0;
+    z-index:1;
+}
+#banner .change .role02{
+    right: 0px;
+    bottom: 2px;
+    width: 470px;
+    height: 537px;
+    background: url("../img/index/role2_08df229.png") no-repeat   ;
+    opacity: 0;
+}
+#banner .change .role03{
+    left: 0px;
+    bottom: 2px;
+    width: 503px;
+    height: 501px;
+    background: url("../img/index/role3_01edf90.png") no-repeat   ;
+    opacity: 0;
+    z-index: 1;
+}
+#banner .change .role04{
+    right: 0px;
+    bottom: 2px;
+    width: 491px;
+    height: 583px;
+    background: url("../img/index/role4_f2a6922.png") no-repeat   ;
+    opacity: 0;
+}
+#banner .change .role01.show{
+    left:306px;
+    opacity:1
+}
+#banner .change .role02.show{
+    right:260px;
+    opacity:1
+}
+#banner .change .role03.show{
+    left:225px;
+    opacity:1
+}
+#banner .change .role04.show{
+    right:220px;
+    opacity:1
+}
+#banner .change .changeBtn{
+    position: absolute;
+    top:285px;
+    right: -101px;
+    width: 41px;
+    height: 66px;
+    background: url("../img/index/changeBtn.png") no-repeat;
+    background-size: 100% 100% ;
+    background-position:center center ;
+    cursor: pointer;
+    transition: .5s;
+}
+#banner .change .changeBtn:hover{
+    top:282px;
+    right: -104px;
+    width: 47px;
+    height: 72px;
+}
+#banner .change .bgBottom{
+    position: absolute;
+    bottom: 2px;
+    left: -15px;
+    width: 100%;
+    height: 23px;
+    background-image: url("../img/index/role_botbg_91ebad7.png");
+    z-index: 99;
+}
+#banner .changeWrap .bunny{
+    position: absolute;
+    left: 64px;
+    bottom: 0px;
+    width: 102px;
+    height: 119px;
+    background-image: url("../img/index/bunny_cc1e937.gif");
+    background-repeat: no-repeat;
+    background-size: 102px 119px;
+    cursor: pointer;
+    opacity: 0.7;
+    z-index: 999;
+}
+/*server*/
+#server{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    background: rgba(255,255,255,0.9);
+    z-index: 9999;
+    display: none;
+}
+#server .serverBox{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 1399px;
+    height: 724px;
+    margin-top: -252px;
+    margin-left: -1204px;
+    background-image: url("../img/index/pop_bg_3721a5a.png");
+    background-repeat: no-repeat;
+    transition: 0.3s;
+    transform: scale(0);
+}
+#server .serverBox.evident{
+    margin-top: -352px;
+    margin-left: -814px;
+    transform: scale(1);
+}
+
+#server .serverBox .serverListBox{
+    position: absolute;
+    top:100px;
+    left: 284px;
+    width: 1065px;
+    height: 580px;
+    padding: 40px 0px 0px 50px;
+}
+#server .serverBox .serverListBox .serverList .li{
+    float: left;
+}
+#server .serverBox .serverListBox .serverList .bigList{
+    position: relative;
+    width: 235px;
+    float: left;
+    margin-left: 5px;
+}
+#server .serverBox .serverListBox .serverList .bigList .listTitle{
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+}
+#server .serverBox .serverListBox .serverList .bigList .listContent {
+    width: 233px;
+    height: 499px;
+    border-left:1px  solid #8C8C8C;
+    border-top: 1px dotted #000000;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#server .serverBox .serverListBox .serverList .listIcon{
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 105px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon{
+    position: absolute;
+    top:15px;
+    left: 35px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-image: url("../img/index/index_z_49d40b3.png");
+}
+#server .serverBox .serverListBox .serverList .listIcon .hot{
+     position: absolute;
+     top:15px;
+     left: 16px;
+     width: 26px;
+     height: 50px;
+     background-image: url("../img/index/fullserver.png");
+ }
+#server .serverBox .serverListBox .serverList .listIcon .new{
+    position: absolute;
+    top:15px;
+    left: 16px;
+    width: 26px;
+    height: 50px;
+    background-image: url("../img/index/newserver.png");
+}
+#server .serverBox .serverListBox .serverList .listIcon .intro{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 115px;
+    height: 22px;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+#server .serverBox .serverListBox .serverList .shortContent{
+    width: 140px;
+    float: left;
+    margin-left: 4px;
+}
+#server .serverBox .serverListBox .serverList .shortContent ul li{
+    position: relative;
+}
+#server .serverBox .serverListBox .serverList .shortContent ul li .listTitle{
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+}
+#server .serverBox .serverListBox .serverList .shortContent ul li .listContent01 {
+    width: 130px;
+    height: 270px;
+    border-left:1px  solid #8C8C8C;
+    border-top: 1px dotted #000000;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#server .serverBox .serverListBox .serverList .shortContent ul li .listContent02 {
+    width: 130px;
+    height: 200px;
+    border-left:1px  solid #8C8C8C;
+    border-top: 1px dotted #000000;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.rect:after{
+    content: "";
+    width: 6px;
+    height: 6px;
+    transform: rotate(45deg);
+    position: absolute;
+    top:27px;
+    left: -3px;
+    background: #000000;
+}
+
+#server .serverBox .serverListBox .serverList .listIcon .icon1-1{
+    background-position: -1487px -7px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon1-2{
+    background-position: -1487px -87px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon1-3{
+    background-position: -1487px -167px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon1-4{
+    background-position: -1487px -247px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon1-5{
+    background-position: -1487px -327px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon1-6{
+    background-position: -1487px -407px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon1-7{
+     background-position: -1487px -487px;
+ }
+#server .serverBox .serverListBox .serverList .listIcon .icon1-8{
+      background-position: -1487px -567px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon1-9{
+    background-position: -1487px -647px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon1-10{
+    background-position: -1487px -727px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon2-1{
+    background-position: -1487px -807px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon2-2{
+    background-position: -1487px -887px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon2-3{
+    background-position: -1487px -967px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon2-4{
+    background-position: -1487px -1047px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon2-5{
+    background-position: -1487px -1127px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon2-6{
+    background-position: -1487px -1207px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon2-7{
+    background-position: -1487px -1287px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon2-8{
+    background-position: -1487px -1367px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon2-9{
+    background-position: -7px -1404px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon2-10{
+    background-position: -87px -1404px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon2-11{
+    background-position: -167px -1404px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon2-12{
+    background-position: -247px -1404px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon2-13{
+    background-position: -327px -1404px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon2-14{
+    background-position: -407px -1404px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon2-15{
+    background-position: -487px -1404px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon2-16{
+    background-position: -567px -1404px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon2-17{
+    background-position: -647px -1404px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon2-18{
+    background-position: -727px -1404px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon3-1{
+    background-position: -807px -1404px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon3-2{
+    background-position: -887px -1404px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon3-3{
+    background-position: -967px -1404px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon3-4{
+    background-position: -1047px -1404px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon3-5{
+    background-position: -1127px -1404px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon3-6{
+    background-position: -1207px -1404px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon3-7{
+    background-position: -1287px -1404px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon3-8{
+    background-position: -1367px -1404px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon3-9{
+    background-position: -12px -1484px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon3-10{
+    background-position: -89px -1483px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon4-1{
+    background-position: -167px -1484px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon4-2{
+    background-position: -247px -1484px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon4-3{
+    background-position: -327px -1484px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon4-4{
+    background-position: -409px -1484px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon4-5{
+    background-position: -1127px -1404px;
+}
+#server .serverBox .serverListBox .serverList .listIcon .icon4-6{
+    background-position: -967px -1404px;
+}
+#server .serverBox .serverListBox .worldPlan{
+    position: absolute;
+    top:50px;
+    right: 0px;
+    border-left: 4px solid #000000 ;
+    width: 170px;
+    height: 360px;
+    background: url("../img/index/plan.png") no-repeat 30px 0px;
+}
+#server .serverBox .serverListBox .fairWin{
+    position: absolute;
+    top:410px;
+    right: 45px;
+    width:100px;
+    height: 30px;
+    background: #c9b377;
+    border-radius: 5px;
+    color: #FFFFFF;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+#server .serverBox .serverListBox .fairWin:hover{
+    background: #e9ce8f;
+}
+#server .serverBox .serverListBox .SaoErWei{
+    position: absolute;
+    bottom: -3px;
+    right: -80px;
+    width: 246px;
+    height: 175px;
+    background: url("../img/index/propSao.png") no-repeat;
+}
+#server .serverBox .serverListBox .return{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 34px;
+    height: 34px;
+    background-image: url("../img/index/return.png");
+    cursor: pointer;
+    transition: 0.5s;
+}
+#server .serverBox .serverListBox .return:hover{
+    transform: rotate(180deg);
+}
+
+
+.sidenorrow:after{
+    content: "";
+    position: absolute;
+    top:76px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    border: 6px solid #fee500;
+    border-right: none;
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+    z-index: 9999;
+}
+
+/*aside*/
+#side{
+    position: absolute;
+    top:476px;
+    left: 50%;
+    margin-left: 260px;
+    width: 687px;
+    height: 1107px;
+    z-index: 999;
+}
+
+
+#side .download{
+    position: absolute;
+    top:42px;
+    left: -390px;
+    width: 390px;
+    height: 123px;
+    background: #fee500;
+    border-radius:15px 0px 0px 15px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+#side .download .downBox{
+    width: 370px;
+    height: 103px;
+    margin: 10px;
+    background:#fccc00 ;
+    box-shadow: 0px 0px 6px 5px #fccc00;
+}
+#side .download .downBox .leftBox{
+    float: left;
+    width: 22px;
+}
+#side .download .downBox .leftBox .shift{
+    float: left;
+    width: 22px;
+    height: 22px;
+    background-image:url("../img/index/shift.png");
+    cursor: pointer;
+}
+#side .download .downBox .leftBox .saoMa{
+    float: left;
+    width: 22px;
+    height: 105px;
+    background-image:url("../img/index/index_z_49d40b3.png");
+    background-position: -1328px -614px;
+    cursor: pointer;
+    display: none;
+}
+#side .download .downBox .intro{
+    float: left;
+    width: 45px;
+    height: 100px;
+    margin-left: 10px;
+    background-image: url("../img/index/soenloadIntro.png");
+}
+#side .download .downBox .erweima{
+    position: relative;
+    float: left;
+    width: 91px;
+    height: 91px;
+    border:8px solid #FFFFFF;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-image: url("../img/index/downloaderweima.png");
+    background-size: 91px 91px;
+}
+#side .download .downBox .erweima .erline{
+    position: absolute;
+    top: -4px;
+    left: -7px;
+    width: 106px;
+    height:9px;
+    background-image: url("../img/index/line_f7b07c8.png");
+    animation: lineMove 4s linear infinite;
+}
+@keyframes lineMove {
+    0%{top:-4px;}
+    50%{top:95px;}
+    100%{ top: -4px;}
+}
+#side .download .downBox .phone{
+    float: left;
+    margin-left:5px;
+}
+#side .download .downBox .phone div{
+   width: 171px;
+    height: 51px;
+    background-image: url("../img/index/index_z_49d40b3.png");
+
+}
+#side .download .downBox .phone a{
+    display: block;
+    background: rgba(255,255,255,0);
+}
+#side .download .downBox .phone .downloadios{
+    background-position: -759px -607px;
+    margin-bottom: 4px;
+}
+#side .download .downBox .phone .downloadAndroid{
+    background-position: -651px -1476px;
+}
+#side .download .downBox .phone .downloadios:hover{
+    background-position: -480px -1475px;
+}
+#side .download .downBox .phone .downloadAndroid:hover{
+    background-position: -907px -959px;
+}
+#side ul{
+    position: relative;
+    width: 687px;
+    height: 1107px;
+    z-index: 99;
+    background-image: url("../img/index/side_bg_4a64d47.png");
+}
+#side ul li{
+    position: absolute;
+    background-image: url("../img/index/index_z_49d40b3.png");
+    background-repeat: no-repeat;
+}
+#side ul li .expLi{
+    background-image: url("../img/index/index_z_49d40b3.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+#side ul .calendar{
+    top:-15px;
+    left: 20px;
+    width: 321px;
+    height: 168px;
+    background-position: -586px -855px;
+}
+
+#side ul .fight{
+    top:136px;
+    left: 20px;
+    width: 321px;
+    height: 104px;
+    z-index: 9;
+    background-position: -661px -1044px;
+    transition: 0.5s;
+}
+#side ul .fight .introduce{
+    position: absolute;
+    top: 52px;
+    font-size: 13px;
+    margin-left: 25px;
+}
+#side ul .fight .expLi{
+    position: relative;
+    width: 321px;
+    height: 0px;
+    transition:0.5s;
+    background-position: -759px -4px;
+}
+#side ul .fight .expLi .expIntroduce{
+    position: absolute;
+    top:110px;
+    left: 30px;
+    font-size: 13px;
+    line-height: 25px;
+}
+#side ul .fight:hover{
+    left: 40px;
+}
+#side ul .fight:hover  .expLi{
+    height: 205px;
+}
+
+
+
+#side ul .boss{
+    top:242px;
+    left:-2px;
+    width: 319px;
+    height: 95px;
+    z-index: 8;
+    transition: 0.5s;
+    background-position: -620px -1300px;
+}
+#side ul .boss .introduce{
+    position: absolute;
+    top: 40px;
+    font-size: 13px;
+    margin-left: 160px;
+}
+#side ul .boss .expLi{
+    position: relative;
+    width: 319px;
+    height: 0px;
+    transition:0.5s;
+    background-position:-313px -3px;
+}
+#side ul .boss .expLi .expDiv{
+    position: absolute;
+    top: 95px;
+    left: 70px;
+    width: 230px;
+}
+#side ul .boss .expLi .expIntroduce{
+    margin-top: 5px;
+    font-size: 13px;
+    line-height: 20px;
+}
+#side ul .boss:hover{
+    left: 20px;
+}
+#side ul .boss:hover  .expLi{
+    height: 363px;
+}
+
+#side ul .assem{
+    top:333px;
+    left: 20px;
+    width: 308px;
+    height: 95px;
+    z-index: 7 ;
+    background-position: -310px -1300px;
+    transition: 0.5s;
+}
+#side ul .assem .introduce{
+    position: absolute;
+    top: 45px;
+    font-size: 13px;
+    margin-left: 25px;
+}
+#side ul .assem .expLi{
+    position: relative;
+    width: 305px;
+    height: 0px;
+    transition:0.5s;
+    background-position: -623px -669px;
+}
+#side ul .assem .expLi .expIntroduce{
+    position: absolute;
+    top:100px;
+    left: 20px;
+    font-size: 13px;
+    line-height: 25px;
+}
+#side ul .assem:hover{
+    left: 40px;
+}
+#side ul .assem:hover  .expLi{
+    height: 185px;
+}
+
+#side ul .wushen{
+    top:422px;
+    left: 15px;
+    width: 295px;
+    height: 100px;
+    transition: 0.5s;
+    z-index: 6;
+    background-position: -301px -1190px;
+}
+#side ul .wushen .introduce{
+    position: absolute;
+    top: 50px;
+    font-size: 13px;
+    margin-left: 135px;
+}
+#side ul .wushen .expLi{
+    position: relative;
+    width: 295px;
+    height: 0px;
+    transition:0.5s;
+    background-position:-327px -663px;
+}
+#side ul .wushen .expLi .expIntroduce{
+    position: absolute;
+    top:110px;
+    left: 30px;
+    font-size: 13px;
+    line-height: 20px;
+}
+#side ul .wushen:hover{
+    left: 35px;
+}
+#side ul .wushen:hover  .expLi{
+    height: 187px;
+}
+
+#side ul .yuhun{
+    top:528px;
+    left: 20px;
+    width: 320px;
+    height: 140px;
+    background-position: -330px -1050px;
+    z-index: 5;
+}
+#side ul .yuhun .introduce{
+    position: absolute;
+    top: 50px;
+    font-size: 13px;
+    margin-left: 10px;
+}
+#side ul .yuhun .expLi{
+    position: relative;
+    width: 320px;
+    height: 0px;
+    transition:0.5s;
+    background-position:0px -374px;
+}
+#side ul .yuhun .expLi .expIntroduce{
+    position: absolute;
+    top:100px;
+    left: 30px;
+    font-size: 13px;
+    line-height: 25px;
+}
+#side ul .yuhun:hover  .expLi{
+    height: 302px;
+}
+
+#side ul .chanllage {
+    top: 614px;
+    left: 5px;
+    width: 308px;
+    height: 100px;
+    transition: 0.5s;
+    background-position: 0px -1298px;
+    z-index: 4;
+}
+#side ul .chanllage .introduce{
+    position: absolute;
+    top: 60px;
+    font-size: 13px;
+    margin-left: 145px;
+}
+#side ul .chanllage .expLi{
+    position: relative;
+    width: 308px;
+    height: 0px;
+    transition:0.5s;
+    background-position:-0px -1px;
+}
+#side ul .chanllage:hover{
+    left: 20px;
+}
+#side ul .chanllage:hover  .expLi{
+    height: 364px;
+}
+
+#side ul .shoulie{
+    top: 705px;
+    left: 20px;
+    width: 310px;
+    height: 100px;
+    background-position: -1078px -886px;
+    transition: 0.5s;
+}
+#side ul .shoulie .introduce{
+    position: absolute;
+    top: 50px;
+    font-size: 13px;
+    margin-left: 20px;
+}
+#side ul .shoulie:hover{
+    left: 40px;
+}
+#side ul .jiejie{
+    top: 810px;
+    left: 7px;
+    width: 305px;
+    height: 90px;
+    background-position: -913px -1200px;
+    transition: 0.5s;
+}
+#side ul .jiejie .introduce{
+    position: absolute;
+    top: 40px;
+    font-size: 13px;
+    margin-left: 105px;
+}
+#side ul .jiejie:hover{
+    left: 30px;
+}
+#side ul .fengyin{
+    top: 888px;
+    left: 22px;
+    width: 305px;
+    height: 95px;
+    background-position: -595px -1189px;
+    transition: 0.5s;
+}
+#side ul .fengyin .introduce{
+    position: absolute;
+    top: 65px;
+    font-size: 13px;
+    margin-left: 20px;
+}
+#side ul .fengyin:hover{
+    left: 40px;
+}
+
+/*section*/
+#sectionWrap{
+    position: absolute;
+    top:670px;
+    left: 0px;
+    width: 100%;
+    height: 270px;
+}
+#sectionWrap .section{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -693px;
+    width: 900px;
+    height: 270px;
+}
+#sectionWrap .section .bannerBox{
+    position: relative;
+    width: 360px;
+    height: 270px;
+    float: left;
+    overflow: hidden;
+}
+#sectionWrap .section .bannerBox ul.banner{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 600%;
+    height: 100%;
+}
+#sectionWrap .section .bannerBox ul.banner.returnLft{
+    left: 0px;
+}
+#sectionWrap .section .bannerBox ul.banner li{
+    width: 360px;
+    height: 100%;
+    float: left;
+}
+#sectionWrap .section .bannerBox ul.banner li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#sectionWrap .section .bannerBox ul.banner .sectionBanner01{
+    background-image: url("../img/index/sectionbanner01.jpg");
+}
+#sectionWrap .section .bannerBox ul.banner .sectionBanner02{
+    background-image: url("../img/index/sectionbanner02.jpg");
+}
+#sectionWrap .section .bannerBox ul.banner .sectionBanner03{
+    background-image: url("../img/index/sectionbanner03.jpg");
+}
+#sectionWrap .section .bannerBox ul.banner .sectionBanner04{
+    background-image: url("../img/index/sectionbanner04.jpg");
+}
+#sectionWrap .section .bannerBox ul.banner .sectionBanner05{
+    background-image: url("../img/index/sectionbanner05.jpg");
+}
+#sectionWrap .section .bannerBox ul.banner .sectionBanner06{
+    background-image: url("../img/index/sectionbanner01.jpg");
+}
+#sectionWrap .section .bannerBox .bannerTab{
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    bottom: 10px;
+    width: 100px;
+    height: 20px;
+}
+#sectionWrap .section .bannerBox .bannerTab li{
+    float: left;
+    width: 8px;
+    height: 8px;
+    border: 3px solid #e37b63;
+    margin-left: 6px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+#sectionWrap .section .bannerBox .bannerTab li.bg{
+    background: #e37b63;
+}
+
+#sectionWrap .section .contentBox{
+    width: 500px;
+    height: 270px;
+    float: left;
+    margin-left: 40px;
+}
+#sectionWrap .section .contentBox ul.titleList{
+    width: 100%;
+    height: 45px;
+    border-bottom: 2px solid #000000;
+}
+#sectionWrap .section .contentBox ul.titleList li{
+    position: relative;
+    float: left;
+    width: 93px;
+    height: 35px;
+}
+
+#sectionWrap .section .contentBox ul.titleList li .shiftBg{
+    position: absolute;
+    top:15px;
+    left: 0px;
+    width: 74px;
+    height: 35px;
+    background: #68d7fc;
+    border-radius: 17.5px;
+    opacity: 0;
+    transition: 0.5s ;
+}
+#sectionWrap .section .contentBox ul.titleList li .shiftBg.show{
+    opacity: 1;
+    top:5px;
+}
+#sectionWrap .section .contentBox ul.titleList li .intervalBg{
+    position: absolute;
+    top:5px;
+    right: 0px;
+    width: 17px;
+    height: 28px;
+    background-image: url("../img/index/index_z_49d40b3.png");
+    background-repeat: no-repeat;
+    background-position: -1458px -505px;
+}
+#sectionWrap .section .contentBox ul.titleList li .titleBg{
+    position: absolute;
+    top:0px;
+    left: 15px ;
+    width: 44px;
+    height: 30px;
+    background-image: url("../img/index/index_z_49d40b3.png");
+    background-repeat: no-repeat;
+}
+#sectionWrap .section .contentBox ul.titleList li .tBg01{
+    background-position: -1400px -1152px;
+}
+
+#sectionWrap .section .contentBox ul.titleList li .tBg02{
+    background-position: -1400px -1030px;
+}
+
+#sectionWrap .section .contentBox ul.titleList li .tBg03{
+    background-position:-1400px -1092px;
+}
+
+#sectionWrap .section .contentBox ul.titleList li .tBg04{
+    background-position: -1400px -1122px;
+}
+
+#sectionWrap .section .contentBox ul.titleList li .tBg05{
+    background-position: -1400px -1061px;
+}
+#sectionWrap .section .contentBox .contentList{
+    position: relative;
+    width: 100%;
+    height: 220px;
+    margin-top: 2px;
+    border-top: 1px solid #000000;
+    overflow: hidden;
+}
+#sectionWrap .section .contentBox .contentList ul.contentWrap{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 500%;
+    height: 100%;
+    transition: 0.5s;
+}
+#sectionWrap .section .contentBox .contentList ul li.textContent{
+    float: left;
+    width: 500px;
+    height: 100%;
+}
+#sectionWrap .section .contentBox .contentList ul li.textContent .article{
+    width: 500px;
+    height: 100%;
+}
+#sectionWrap .section .contentBox .contentList ul li.textContent .article li{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px dotted #000000;
+}
+#sectionWrap .section .contentBox .contentList ul li.textContent .article li p.articleLink{
+    float: left;
+    width: 400px;
+    height: 100%;
+    line-height: 40px;
+    font-size: 14px;
+    color: #333;
+    overflow: hidden; /*自动隐藏文字*/
+    text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+    white-space: nowrap;/*强制不换行*/
+}
+#sectionWrap .section .contentBox .contentList ul li.textContent .article li p.time{
+    float: right;
+    width: 70px;
+    height: 100%;
+    line-height: 40px;
+    font-size: 12px;
+    color: #becddc;
+}
+#sectionWrap .section .contentBox .contentList ul li.textContent .article li p.articleLink:hover{
+    color: #c18338;
+}
+
+
+
+#strategy{
+    position: relative;
+    width: 100%;
+    height: 607px;
+    margin-top: 350px;
+    background-image: url("../img/index/strategy_bg_7506a1b.jpg");
+}
+#strategy .strategyWrap{
+    position: absolute;
+    left: 50%;
+    top:0px;
+    width: 804px;
+    height: 435px;
+    border:1px solid transparent;
+    margin-left: -600px;
+}
+#strategy .strategyWrap ul.wrapTitle  li{
+    float: left;
+
+}
+#strategy .strategyWrap ul.wrapTitle  li.peace{
+    width: 130px;
+    height: 69px;
+    background-image: url("../img/index/index_z_49d40b3.png");
+    background-repeat: no-repeat;
+    background-position: -411px -587px;
+}
+#strategy .strategyWrap ul.wrapTitle  li.interval{
+    width: 44px;
+    height: 4px;
+    margin: 35px 8px 0px ;
+    background-image: url("../img/index/index_z_49d40b3.png");
+    background-repeat: no-repeat;
+    background-position: -1422px -153px;
+}
+#strategy .strategyWrap ul.wrapTitle  li.shiShen{
+    position: relative;
+    width: 100px;
+    height: 91px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+#strategy .strategyWrap ul.wrapTitle  li .moveBg{
+    position: absolute;
+    top:10px;
+    left: 0px;
+    width: 96px;
+    height: 91px;
+    background-image: url("../img/index/index_z_49d40b3.png");
+    background-repeat: no-repeat;
+    background-position: -939px -1297px;
+    opacity: 0;
+    transition: 0.5s;
+}
+#strategy .strategyWrap ul.wrapTitle  li .moveBg.show{
+    top:0px;
+    opacity: 1;
+}
+#strategy .strategyWrap ul.wrapTitle  li.shiShen .titleTag{
+    position: absolute;
+    top:27px;
+    left: 50%;
+    margin-left: -35px;
+    width: 70px;
+    height: 33px;
+    background-image: url("../img/index/index_z_49d40b3.png");
+    background-repeat: no-repeat;
+    background-position: -1400px -865px;
+}
+#strategy .strategyWrap ul.wrapTitle  li.zhuJue{
+    position: relative;
+    width: 100px;
+    height: 91px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+#strategy .strategyWrap ul.wrapTitle  li.zhuJue .titleTag{
+    position: absolute;
+    top:27px;
+    left: 50%;
+    margin-left: -32px;
+    width: 64px;
+    height: 33px;
+    background-image: url("../img/index/index_z_49d40b3.png");
+    background-repeat: no-repeat;
+    background-position: -1478px -1440px;
+}
+#strategy .strategyWrap ul.wrapTitle  li:hover .moveBg{
+    top:0px;
+    opacity: 1;
+}
+#strategy .strategyWrap .content{
+    position: relative;
+    width: 804px;
+    height: 305px;
+    margin-top: 130px;
+}
+#strategy .strategyWrap .content .shiShenContent{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 804px;
+    height: 305px;
+}
+#strategy .strategyWrap .content .shiShenContent ul.shiShenTitle{
+    width: 804px;
+    height: 50px;
+    border-bottom: 1px dotted #000000;
+    line-height: 50px;
+
+}
+#strategy .strategyWrap .content .shiShenContent ul.shiShenTitle li{
+    float: left;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 32px;
+    font-family: "Microsoft JhengHei",'Microsoft Yahei';
+    cursor: pointer;
+    transition: .5s;
+}
+#strategy .strategyWrap .content .shiShenContent ul li.clicked{
+    color: #cea441;
+}
+#strategy .strategyWrap .content .shiShenContent ul li:hover{
+    color: #cea441;
+}
+#strategy .strategyWrap .content .shiShenContent ul li.allList{
+    width: 131px;
+    height: 29px;
+    margin-top: 12px;
+    background-image: url("../img/index/viewAll_btn_18af8fe.png");
+    background-repeat: no-repeat;
+}
+#strategy .strategyWrap .content .shiShenContent ul li.allList a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#strategy .strategyWrap .content .shiShenContent .shiftContent{
+    position: relative;
+    margin-top: 33px;
+    width: 803px;
+    height: 210px;
+}
+#strategy .strategyWrap .content .shiShenContent .shiftContent .roleContain{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 803px;
+    height: 210px;
+    display: none;
+}
+#strategy .strategyWrap .content .shiShenContent .shiftContent .roleContain.show{
+    display: block;
+}
+#strategy .strategyWrap .content .shiShenContent .shiftContent .roleContain .roleWrap{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 803px;
+    height: 210px;
+    overflow: hidden;
+
+}
+
+
+
+
+
+#strategy .strategyWrap .content .shiShenContent .roleContain .turn  .turnLeft{
+    position: absolute;
+    top:50%;
+    margin-top: -21px;
+    left:-15px;
+    width: 42px;
+    height: 33px;
+    cursor: pointer;
+    background-image: url("../img/index/index_z_49d40b3.png");
+    background-repeat: no-repeat;
+    background-position: -1400px -832px;
+    display: none;
+}
+#strategy .strategyWrap .content .shiShenContent .roleContain .turn  .turnLeft:hover{
+    background-position: -1400px -964px;
+}
+#strategy .strategyWrap .content .shiShenContent .roleContain .turn  .turnRight{
+    position: absolute;
+    top:50%;
+    margin-top: -21px;
+    right:-15px;
+    width: 42px;
+    height: 33px;
+    cursor: pointer;
+    background-image: url("../img/index/index_z_49d40b3.png");
+    background-repeat: no-repeat;
+    background-position: -1400px -931px;
+    /*display: none;*/
+
+}
+#strategy .strategyWrap .content .shiShenContent .roleContain .turn  .turnRight:hover{
+    background-position: -1400px -898px;
+}
+#strategy .strategyWrap .content .shiShenContent .shiftContent ul{
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+#strategy .strategyWrap .content .shiShenContent .shiftContent .allRole{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#strategy .strategyWrap .content .shiShenContent .shiftContent ul li.roleList{
+    width: 89px;
+    height: 210px;
+    padding: 5px 24px 0px 20px;
+    border-right: 1px solid #95a7a4;
+    float: left;
+}
+
+#strategy .strategyWrap .content .shiShenContent .shiftContent ul li.roleList div.roleContent{
+    position: relative;
+    width:89px;
+    height: 93px;
+    margin-bottom: 15px;
+    background-image: url("../img/index/index_z_49d40b3.png");
+    background-repeat: no-repeat;
+    background-position: -1218px -1193px;
+}
+#strategy .strategyWrap .content .shiShenContent .shiftContent ul li.roleList div.roleContent img{
+    position: absolute;
+    top:2px;
+    left: 2px;
+    width: 85px;
+    height:  85px;
+}
+#strategy .strategyWrap .content .shiShenContent .shiftContent ul li.roleList div.roleContent .surface{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 89px;
+    height:93px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: 0.5s;
+}
+#strategy .strategyWrap .content .shiShenContent .shiftContent ul li.roleList div.roleContent:hover .surface{
+    opacity: 1;
+}
+#strategy .strategyWrap .content .shiShenContent .shiftContent ul li.roleList div.roleContent .surface span.title{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 20px ;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-family: "Microsoft JhengHei",'Microsoft Yahei';
+    line-height: 16px;
+    transform: translate(-50%,-50%);
+}
+#strategy .strategyWrap .content .shiShenContent .shiftContent ul li.roleList div.roleContent div.newRole{
+    position: absolute;
+    top:4px;
+    right: -10px;
+    width: 31px;
+    height: 36px;
+    background-image: url("../img/index/new_icon_253bf40.png");
+    background-repeat: no-repeat;
+}
+#strategy .strategyWrap .content .zhuJueContent{
+    position: absolute;
+    top:-25px;
+    left: 0px;
+    width: 804px;
+    height: 345px;
+}
+#strategy .strategyWrap .content .zhuJueContent .peopleList{
+    float: left;
+    margin-top: 50px;
+    width: 150px;
+    height: 250px;
+}
+#strategy .strategyWrap .content .zhuJueContent .peopleList .zhujueTab{
+    position: relative;
+    width: 135px;
+    height: 35px;
+    border: 2px solid #FFFFFF;
+    margin-bottom: 20px;
+    color: #000;
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+    font-family: "Microsoft YaHei", "微软雅黑", tahoma, arial, simhei, "黑体";
+    transition: 0.5s;
+}
+#strategy .strategyWrap .content .zhuJueContent .peopleList .zhujueTab .arrow{
+    position: absolute;
+    top:50%;
+    margin-top: -5px;
+    right:-9px;
+    width: 0px;
+    height: 0px;
+    border: 5px solid #000000;
+    border-right: none;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    transition: 0.5s;
+    opacity: 0;
+}
+#strategy .strategyWrap .content .zhuJueContent .peopleList .zhujueTab .arrow.show{
+    opacity: 1;
+}
+#strategy .strategyWrap .content .zhuJueContent .peopleList .zhujueTab.choose{
+    background: #FFFFFF;
+    border: 2px solid #000;
+}
+#strategy .strategyWrap .content .zhuJueContent .peopleList .zhujueTab:hover{
+    background: #FFFFFF;
+    border: 2px solid #000;
+}
+#strategy .strategyWrap .content .zhuJueContent .peopleList .zhujueTab:hover .arrow{
+    opacity: 1;
+}
+
+#strategy .strategyWrap .content .zhuJueContent .zhujueIntro{
+    position: relative;
+    float: left;
+    width: 560px;
+    height: 345px;
+    margin-left: 90px;
+
+}
+
+#strategy .strategyWrap .content .zhuJueContent .zhujueIntro .introWrap{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+#strategy .strategyWrap .content .zhuJueContent .zhujueIntro .introWrap.show{
+    display: block;
+}
+#strategy .strategyWrap .content .zhuJueContent .zhujueIntro .introWrap .images{
+    position: relative;
+    float: left;
+    width: 302px;
+    height: 338px;
+}
+#strategy .strategyWrap .content .zhuJueContent .zhujueIntro .introWrap .images img{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+#strategy .strategyWrap .content .zhuJueContent .zhujueIntro .introWrap .intro{
+    float: right;
+    margin-top: 70px;
+    width: 227px;
+    height: 233px;
+}
+#strategy .strategyWrap .content .zhuJueContent .zhujueIntro .introWrap .intro p.number{
+    width: 38px;
+    height: 23px;
+    background-image: url("../img/index/index_z_49d40b3.png");
+}
+#strategy .strategyWrap .content .zhuJueContent .zhujueIntro .introWrap .intro .no01{
+    background-repeat: no-repeat ;
+    background-position: -1437px -1205px;
+}
+#strategy .strategyWrap .content .zhuJueContent .zhujueIntro .introWrap .intro .no02{
+    background-repeat: no-repeat ;
+    background-position: -1399px -1182px;
+}
+#strategy .strategyWrap .content .zhuJueContent .zhujueIntro .introWrap .intro .no03{
+    background-repeat: no-repeat ;
+    background-position:-1437px -1182px;
+}
+#strategy .strategyWrap .content .zhuJueContent .zhujueIntro .introWrap .intro .no04{
+    background-repeat: no-repeat ;
+    background-position: -1399px -1206px;
+}
+#strategy .strategyWrap .content .zhuJueContent .zhujueIntro .introWrap .intro p.name{
+    margin-top:10px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 28px;
+    color: #000 ;
+    font-family: 'Microsoft Yahei';
+    margin-bottom: 2px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border-bottom:2px solid #000000 ;
+}
+#strategy .strategyWrap .content .zhuJueContent .zhujueIntro .introWrap .intro p.name{
+    margin-top:10px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 28px;
+    color: #000 ;
+    font-family: 'Microsoft Yahei';
+    margin-bottom: 2px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border-bottom:2px solid #000000 ;
+}
+#strategy .strategyWrap .content .zhuJueContent .zhujueIntro .introWrap .intro p.introContain{
+    border-top: 1px solid #000000;
+    color: #333;
+    font-size: 14px;
+    line-height: 22px;
+    padding-top: 5px;
+    margin-bottom: 19px;
+}
+#strategy .strategyWrap .content .zhuJueContent .zhujueIntro .introWrap .intro a{
+    display: block;
+    width: 55px;
+    height: 43px;
+    background-image: url("../img/index/index_z_49d40b3.png");
+    background-repeat: no-repeat;
+    background-position: -1402px -672px;
+    opacity: 1;
+}
+#strategy .strategyWrap .content .zhuJueContent .zhujueIntro .introWrap .intro a:hover{
+    opacity: 0.7;
+}
+#strategy .strategyWrap .wrap{
+    display: none;
+}
+#strategy .strategyWrap .wrap.show{
+    display: block;
+}
+#tactic{
+    position: relative;
+    width: 1200px;
+    height: 437px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#tactic .search{
+    position: absolute;
+    top: -75px;
+    left: 0px;
+    width: 375px;
+    height: 58px;
+
+}
+#tactic .search .searchText{
+    float: left;
+    margin-top: 14px;
+    width: 315px;
+    height: 40px;
+    outline: none;
+    border: 2px solid #000;
+    border-right: none;
+    text-indent: 20px;
+    font-size: 16px;
+    /*font-weight: bold;*/
+    line-height: 40px;
+}
+#tactic .search .searchBtn{
+    float: left;
+    width: 58px;
+    height: 58px;
+    background-image: url("../img/index/index_z_49d40b3.png") ;
+    background-position:-1400px -563px;
+    cursor: pointer;
+}
+#tactic .search .searchBtn:hover{
+    background-position:-1400px -505px;
+
+}
+#tactic .leftBanner{
+    float: left;
+    width: 368px;
+    height: 430px;
+    margin-right: 35px;
+    border: 2px solid #000000;
+}
+#tactic .leftBanner .strategyBanner{
+    position: relative;
+    width: 368px;
+    height: 262px;
+}
+#tactic .leftBanner .strategyBanner .bannerPanel{
+    width: 368px;
+    height: 228px;
+    position: relative;
+    overflow: hidden;
+}
+#tactic .leftBanner .strategyBanner .strategyBannerWrap{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 736px;
+    height: 228px;
+}
+#tactic .leftBanner .strategyBanner .strategyBannerWrap img{
+    float: left;
+}
+#tactic .leftBanner .strategyBanner .strategyBannerNav{
+    position: absolute;
+    top:242px;
+    left: 50%;
+    margin-left: -25px;
+    width: 50px;
+    height: 16px;
+}
+#tactic .leftBanner .strategyBanner .strategyBannerNav .dotNav{
+    float: left;
+    width: 8px;
+    height: 8px;
+    border: 4px solid #000000 ;
+    border-radius: 50%;
+    margin-left: 5px;
+    cursor: pointer;
+}
+#tactic .leftBanner .strategyBanner .strategyBannerNav .dotNav.choosed{
+    background: #000000;
+}
+#tactic .leftBanner .strategyList{
+    width: 368px;
+    height: 150px;
+    margin-top: 15px;
+}
+#tactic .leftBanner .strategyList .list{
+    float: left;
+    background-image:url("../img/index/index_z_49d40b3.png") ;
+}
+#tactic .leftBanner .strategyList .listWrap{
+    width: 24px;
+    height: 134px;
+    border-left: 32px solid #FFFFFF;
+    border-right: 24px solid #FFFFFF;
+    transition: 0.5s;
+}
+#tactic .leftBanner .strategyList .listInterval{
+    width: 11px;
+    height: 150px;
+    background-position: -1295px -315px;
+}
+#tactic .leftBanner .strategyList .list01{
+    background-position: -1343px -315px;
+}
+#tactic .leftBanner .strategyList .list02{
+    background-position: -1308px -466px;
+}
+#tactic .leftBanner .strategyList .list03{
+    background-position: -1321px -315px;
+}
+#tactic .leftBanner .strategyList .list04{
+    background-position: -1368px -315px;
+}
+#tactic .leftBanner .strategyList .listWrap:hover{
+    margin-top: -10px;
+}
+#tactic .rightBanner{
+    float: left;
+    width: 790px;
+    height: 437px;
+}
+#tactic .rightBanner .rightBannerTitle{
+    width: 790px;
+    height: 96px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #cbcdcc;
+}
+
+#tactic .rightBanner .rightBannerTitle li{
+    float: left;
+}
+#tactic .rightBanner .rightBannerTitle .gonglue{
+    width: 134px;
+    height: 85px;
+    margin-right: 12px;
+    cursor: pointer;
+    background-image: url("../img/index/index_z_49d40b3.png");
+    background-position: -1035px -1297px;
+}
+#tactic .rightBanner .rightBannerTitle .interval{
+    width: 44px;
+    height: 4px;
+    margin-top: 50px;
+    background-image: url("../img/index/index_z_49d40b3.png");
+    background-position:-1422px -153px;
+}
+#tactic .rightBanner .rightBannerTitle .item{
+    position: relative;
+    width: 97px;
+    height: 91px;
+    margin: 0px 8px 0px 8px;
+    cursor: pointer;
+    overflow: hidden;
+}
+#tactic .rightBanner .rightBannerTitle .item .shiftBg{
+    position: absolute;
+    left: 0px;
+    width: 97px;
+    height: 91px;
+    background-image: url("../img/index/index_z_49d40b3.png");
+    background-position:-939px -1297px;
+    top: 20px;
+    opacity: 0;
+    transition: 0.5s;
+}
+#tactic .rightBanner .rightBannerTitle .item .shiftBg.show{
+    top:0px;
+    opacity: 1;
+}
+#tactic .rightBanner .rightBannerTitle .item .jueseIcon{
+    position: absolute;
+    top:20px;
+    left: 16px;
+    width: 68px;
+    height: 39px;
+    background-image: url("../img/index/index_z_49d40b3.png");
+}
+#tactic .rightBanner .rightBannerTitle .item .xinshouIcon{
+    background-position: -1398px -755px;
+}
+#tactic .rightBanner .rightBannerTitle .item .wushenIcon{
+    top:27px;
+    left: 14px;
+    width: 71px;
+    height: 32px;
+    background-position: -1400px -997px;
+}
+#tactic .rightBanner .rightBannerTitle .item .doujiIcon{
+    top:21px;
+    left: 12px;
+    width: 75px;
+    height: 38px;
+    background-position: -1399px -794px;
+}
+#tactic .rightBanner .rightBannerTitle .item .wanfaIcon{
+    top:27px;
+    left: 8px;
+    width: 84px;
+    height: 32px;
+    background-position: -1236px -992px;
+}
+#tactic .rightBanner .bannerWrap{
+    position: relative;
+    width: 835px;
+    height: 300px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+#tactic .rightBanner .bannerWrap .bannerContianer{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 4175px;
+    height: 300px;
+}
+#tactic .rightBanner .bannerWrap .bannerContianer .bannerList{
+   float: left;
+    width: 835px;
+    height: 300px;
+}
+#tactic .rightBanner .bannerWrap .bannerContianer .bannerList .list{
+    width: 835px;
+    height: 300px;
+}
+#tactic .rightBanner .bannerWrap .bannerContianer .bannerList .list li{
+    position: relative;
+    float: left;
+    width: 360px;
+    height: 60px;
+    margin-right: 55px;
+    border-bottom: 1px dotted #cccccc;
+}
+#tactic .rightBanner .bannerWrap .bannerContianer .bannerList .list li.linkItem:after{
+    content: "";
+    position: absolute;
+    top:15px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    border-left: 7px solid #000000;
+    border-right:none ;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+#tactic .rightBanner .bannerWrap .bannerContianer .bannerList .list li.linkItem p{
+    margin-top: 10px;
+    margin-left: 13px;
+    width: 340px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei", "微软雅黑", tahoma, arial, simhei, "黑体";
+    color: #333;
+
+}
+#tactic .rightBanner .bannerWrap .bannerContianer .bannerList .list li.linkItem p.author{
+    margin-top: 0px;
+    margin-left: 13px;
+    color: #b2afaf;
+}
+#tactic .rightBanner .bannerWrap .bannerContianer .bannerList .list li.linkItem a:hover p.linkTitle{
+    color: #c1831c;
+}
+#tongren{
+    position: relative;
+    width: 1200px;
+    height: 537px;
+    margin: 60px auto 0px;
+    border: 1px solid transparent;
+}
+
+#tongren .sum{
+    float: left;
+    width: 116px;
+    margin-right: 21px;
+}
+#tongren .sum  .sumIcon{
+    width: 112px;
+    height: 106px;
+    margin-top: -19px;
+    margin-right: 20px;
+    background-image: url("../img/index/index_z_49d40b3.png");
+    background-position: -929px -666px;
+}
+#tongren .headerTitle{
+    float: left;
+    width: 1062px;
+    height: 77px;
+    border-bottom: 2px solid #333333;
+    overflow: hidden;
+}
+#tongren .headerTitle li{
+    position: relative;
+    float: left;
+    width: 154px;
+    height: 60px;
+    margin-bottom: 17px;
+    cursor: pointer;
+}
+#tongren .headerTitle li.borderRight{
+    border-right: 1px dotted #333333;
+}
+#tongren .headerTitle li.arrow{
+    width: 132px;
+}
+#tongren .headerTitle li p{
+    position: absolute;
+    top:20px;
+    left: 50%;
+    margin-left: -36px;
+    width: 72px;
+    height: 18px;
+    background-image: url("../img/index/index_z_49d40b3.png");
+    transition: 0.5s;
+}
+#tongren .headerTitle li p.movetop{
+    top:0px;
+}
+#tongren .headerTitle li p.jingxuan{
+    background-position: -1400px -1264px;
+}
+#tongren .headerTitle li p.huihua{
+    background-position: -1400px -1300px;
+}
+#tongren .headerTitle li p.cos{
+    background-position: -1400px -1282px;
+}
+#tongren .headerTitle li p.shipin{
+    background-position: -1400px -1246px;
+}
+#tongren .headerTitle li p.xiaoshuo{
+     background-position: -1400px -1228px;
+ }
+#tongren .headerTitle li p.mianjian{
+    width: 90px;
+    margin-left: -45px;
+    background-position: -1251px -1150px;
+}
+#tongren .headerTitle li.arrow .arrowIcon{
+    position: absolute;
+    top:30px;
+    right: 10px;
+    width: 100px;
+    height: 24px;
+    background-image: url("../img/index/index_z_49d40b3.png");
+    background-position: -932px -609px;
+    transition: 0.5s;
+}
+#tongren .headerTitle li.arrow .arrowIcon:hover{
+    right: 0px;
+}
+#tongren .headerTitle li div.icon{
+    position: absolute;
+    top:77px;
+    left: 0px;
+    width: 155px;
+    height: 54px;
+    background-image: url("../img/index/icons_8a667d7.png");
+    transition: 0.5s;
+}
+#tongren .headerTitle li div.icon.movetop{
+    top:25px;
+}
+#tongren .headerTitle li div.jingxuanIcon{
+    background-position: 0px 1px;
+}
+#tongren .headerTitle li div.huihuaIcon{
+    background-position: -165px 1px;
+}
+#tongren .headerTitle li div.cosIcon{
+    background-position: -315px 1px;
+}
+#tongren .headerTitle li div.shipinIcon{
+    background-position: -470px 1px;
+}
+#tongren .headerTitle li div.xiaoshuoIcon{
+     background-position: -625px 1px;
+ }
+#tongren .headerTitle li div.mianjianIcon{
+    background-position: -920px 1px;
+}
+
+#tongren .bannerWrap{
+    position: relative;
+    margin-top: 125px;
+    width: 1200px;
+    height: 415px;
+    border: 1px solid red;
+    overflow: hidden;
+}
+#tongren .bannerWrap .bannerPanel{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 7200px;
+    height: 415px;
+}
+#tongren .bannerWrap .bannerPanel .bannerContain{
+    float: left;
+    width: 1200px;
+    height: 415px;
+}
+#tongren .bannerWrap .bannerPanel .bannerContain .bannerTab{
+    width: 1200px;
+    height: 415px;
+}
+#tongren .bannerWrap .bannerPanel .bannerContain .bannerTab li{
+    float: left;
+    width: 285px;
+    height: 200px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+#tongren .bannerWrap .bannerPanel .bannerContain .bannerTab li .imgTab{
+    position: relative;
+    width: 285px;
+    height: 163px;
+}
+#tongren .bannerWrap .bannerPanel .bannerContain .bannerTab li .imgTab img{
+    width: 285px;
+    height: 163px;
+}
+#tongren .bannerWrap .bannerPanel .bannerContain .bannerTab li .imgTab .pop{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 285px;
+    height: 163px;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: 0.3s;
+}
+#tongren .bannerWrap .bannerPanel .bannerContain .bannerTab li .imgTab:hover .pop{
+    opacity: 1;
+}
+#tongren .bannerWrap .bannerPanel .bannerContain .bannerTab li .imgTab .pop .popIcon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -46px;
+    margin-left: -40px;
+    width: 79px;
+    height: 93px;
+    background-image: url("../img/index/index_z_49d40b3.png");
+    background-position: -679px -474px;
+}
+#tongren .bannerWrap .bannerPanel .bannerContain .bannerTab li .intro{
+    height: 39px;
+    line-height: 39px;
+    font-size: 14px;
+    color: #666;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+
+#video{
+    position: relative;
+    width: 100%;
+    height: 514px;
+    margin-top: 55px;
+    background-image: url("../img/index/video_bg_e5f0d15.jpg");
+    background-position: center center;
+}
+#video .wrap{
+    width: 1200px;
+    height: 514px;
+    margin: auto;
+}
+#video .wrap .tab{
+    float: left;
+    width: 580px;
+    height: 430px;
+    margin-top: 60px;
+}
+#video .wrap .tab.marL{
+    margin-left: 30px;
+ }
+#video .wrap .tab .wrapLi{
+    position: relative;
+    float: left;
+    width: 270px;
+    height: 200px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+#video .wrap .tab .wrapLi .title{
+    width:227px;
+    height: 148px;
+    background-image: url("../img/index/index_z_49d40b3.png");
+}
+#video .wrap .tab .wrapLi .title.titleLeft{
+    background-position: -1078px -466px;
+}
+#video .wrap .tab .wrapLi .title.titleRight{
+    background-position: -1101px -613px;
+}
+#video .wrap .tab .wrapLi .imgTab{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 270px;
+    height: 154px;
+    background-size: 270px 154px;
+    background-position: center center;
+    transition: 0.5s;
+}
+#video .wrap .tab .wrapLi .linkTitle{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 270px;
+    height: 45px;
+    line-height: 45px;
+    text-indent: 10px;
+    font-size: 14px;
+    color: #333333;
+}
+#video .wrap .tab .wrapLi .imgTab:hover {
+    transform: scale(1.1);
+}
+#video .wrap .tab .wrapLi .linkTitle.bgWhite{
+    background: #FFFFFF;
+}
+#video .wrap .tab .wrapLi .imgTab.heXin{
+    background-image: url("../img/index/video/1.jpg");
+}
+#video .wrap .tab .wrapLi .imgTab.shengYou{
+    background-image: url("../img/index/video/2.jpg");
+}
+#video .wrap .tab .wrapLi .imgTab.dance{
+    background-image: url("../img/index/video/3.jpg");
+}
+#video .wrap .tab .wrapLi .imgTab.yuanhua01{
+    background-image: url("../img/index/video/4.jpg");
+}
+#video .wrap .tab .wrapLi .imgTab.yuanhua02{
+    background-image: url("../img/index/video/5.jpg");
+}
+#video .wrap .tab .wrapLi .imgTab.juese{
+    background-image: url("../img/index/video/6.jpg");
+}
+
+#activity{
+    position: relative;
+    width: 100%;
+    height: 370px;
+    margin-top: 55px;
+}
+#activity .wrap{
+    width: 1200px;
+    height: 370px;
+    margin: auto;
+}
+#activity .wrap .actLeft{
+    float: left;
+    width: 257px;
+    height: 370px;
+    background-image: url("../img/index/activity_title_0dc5028.png");
+    margin-right: 37px;
+}
+#activity .wrap .arcRight{
+    float: left;
+    width: 905px;
+    height: 370px;
+}
+#activity .wrap .arcRight .arcContent{
+    position: relative;
+    float: left;
+    width: 270px;
+    height: 153px;
+    overflow: hidden;
+}
+#activity .wrap .arcRight .arcContent.marR{
+    margin-right: 47px;
+}
+#activity .wrap .arcRight .arcContent.marB{
+    margin-bottom: 35px;
+}
+#activity .wrap .arcRight .arcContent .titleWrap{
+    position: absolute;
+    top:112px;
+    left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 31px;
+    line-height: 31px;
+    color: #FFFFFF;
+    font-size: 14px;
+    border: 1px solid #FFFFFF;
+}
+#activity .wrap .arcRight .arcContent img{
+    width: 270px;
+    height: 153px;
+    transition: 0.3s;
+
+}
+#activity .wrap .arcRight .arcContent:hover img{
+    transform: scale(1.1);
+}
+#code{
+    position: relative;
+    width: 1200px;
+    height: 200px;
+    margin: 60px auto 0px;
+}
+#code .codeTitle{
+    float: left;
+    width: 70px;
+    height: 200px;
+    margin-right: 105px;
+    background-image: url("../img/index/logo_7920691.png");
+}
+#code .guanZhu{
+    position: relative;
+    float: left;
+    width: 240px;
+    height: 170px;
+    padding: 15px 0px 15px 30px;
+    background: #f6f6f6;
+    margin-right: 120px;
+}
+#code .guanZhu p.guanzhugov{
+    float: left;
+    width: 27px;
+    line-height: 17px;
+    font-size: 16px;
+}
+#code .guanZhu p.bold{
+    float: left;
+    width: 24px;
+    height: 96px;
+    background-image: url("../img/index/index_z_49d40b3.png");
+    background-position: -1360px -762px;
+}
+#code .guanZhu .erweima{
+    position: absolute;
+    top:-30px;
+    right: -30px;
+    width: 132px;
+    height: 132px;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    background: #FFFFFF;
+}
+#code .guanZhu .line{
+    position: absolute;
+    left: 30px;
+    top:155px;
+    width: 52px;
+    height: 2px;
+    background: #d1d1d1;
+}
+#code .guanZhu .author{
+    position: absolute;
+    left: 30px;
+    bottom: 10px;
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+}
+#code .guanZhu .author span{
+    color: #d2c199;
+}
+#code .guanZhu p.boldWei{
+    float: left;
+    width: 24px;
+    height: 119px;
+    background-image: url("../img/index/index_z_49d40b3.png");
+    background-position: -1331px -466px;
+}
+#code .kefu{
+    position: relative;
+    float: left;
+    width: 225px;
+    height: 185px;
+}
+#code .kefu .service{
+    position: absolute;
+    top: -30px;
+    left: -5px;
+    width: 111px;
+    height: 109px;
+    background-image:url("../img/index/index_z_49d40b3.png");
+    background-position:-569px -474px;
+}
+#code .kefu .tele{
+    height: 22px;
+    line-height: 22px;
+    font-size: 14px;
+    margin-top: 95px;
+}
+#code .kefu .teleNum{
+    height: 22px;
+    font-family: Georgia,"Microsoft Yahei";
+    line-height: 22px;
+    font-size: 18px;
+}
+#code .kefu .line{
+    position: absolute;
+    left: 0px;
+    top:155px;
+    width: 52px;
+    height: 2px;
+    background: #d1d1d1;
+}
+#code .kefu .kefuLink{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 136px;
+    height: 18px;
+}
+#code .kefu .kefuLink a{
+    color: #dbbe7c;
+    font-size: 14px;
+    margin-right: 5px;
+    font-family: 'Microsoft Yahei';
+}
+#code .kefu .kefuLink a:hover{
+    text-decoration: underline;
+}
+#code .returnTop{
+    position: absolute;
+    top:0px;
+    right: -60px;
+    width: 25px;
+    height: 111px;
+    background-image: url("../img/index/index_z_49d40b3.png");
+    background-position: -1355px -464px;
+    transition: 0.5s;
+}
+#code .returnTop:hover{
+    top:-20px;
+}
+
+#goTo{
+    position: relative;
+    margin-top: 70px;
+    width: 100%;
+    height: 524px;
+    background-image: url("../img/index/foot_b26a2e6.jpg");
+    background-position: center center;
+}
+#goTo .goToTitle{
+    position: absolute;
+    top:85px;
+    left: 50%;
+    margin-left: -295px;
+    width: 591px;
+    height: 29px;
+    line-height: 30px;
+    font-size: 16px;
+    background-image: url("../img/index/index_z_49d40b3.png");
+    background-position: -661px -1150px;
+    opacity: 0;
+    transition: .7s;
+}
+#goTo .goToTitle.fade{
+    top:115px;
+    opacity: 1;
+}
+#goTo .saoWrap{
+    position: absolute;
+    top:145px;
+    left: 50%;
+    margin-left: -165px;
+    width: 330px;
+    height: 380px;
+    cursor: pointer;
+    overflow: hidden;
+}
+#goTo .saoWrap .saoWrapTitle{
+    position: absolute;
+    top:20px;
+    left: 50%;
+    margin-left: -58px;
+    width: 116px;
+    height: 23px;
+    background-image: url("../img/index/index_z_49d40b3.png");
+    background-position: -930px -632px;
+    opacity: 0;
+    transition: 0.7s;
+}
+#goTo .saoWrap .saoWrapTitle.fade{
+    top:50px;
+    opacity: 1;
+ }
+
+#goTo .saoWrap .bar{
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    margin-left: -11px;
+    width: 22px;
+    height: 76px;
+    background-image: url("../img/index/index_z_49d40b3.png");
+    background-position: -1400px -80px;
+    opacity: 0;
+    transition: 0.7s;
+}
+#goTo .saoWrap .bar.fade{
+    top:105px;
+    opacity: 1;
+}
+#goTo .saoWrap .ma{
+    position: absolute;
+    top:105px;
+    left: 50%;
+    margin-left: -76px;
+    width: 152px;
+    height: 152px;
+    box-shadow: 0 0 30px #a7b9c2;
+    transition: 0.7s;
+    opacity: 0;
+}
+#goTo .saoWrap .ma .tishi{
+    position: absolute;
+    top:0px;
+    right: -45px;
+    width: 16px;
+    height: 150px;
+    background-image: url("../img/index/index_z_49d40b3.png");
+    background-position: -1279px -315px;
+}
+#goTo .saoWrap .door{
+    position: absolute;
+    bottom:0px;
+    left: 50%;
+    margin-left: -136px;
+    width: 240px;
+    height: 180px;
+    background-image: url("../img/index/index_z_49d40b3.png");
+    background-position:-329px -363px;
+    transition: 0.7s;
+}
+#goTo .saoWrap:hover .saoWrapTitle{
+     opacity: 0;
+}
+#goTo .saoWrap:hover .bar{
+    top: 30px;
+}
+#goTo .saoWrap:hover .ma{
+    opacity: 1;
+    top:80px;
+}
+#goTo .saoWrap:hover .door{
+    bottom: -40px;
+}
+
+#foot{
+    position: relative;
+    width: 810px;
+    height: 200px;
+    margin: auto;
+}
+
+#foot .shareTitle{
+    width: 360px;
+    height: 20px;
+    padding-top: 20px;
+    margin: auto;
+    font-size: 12px;
+    font-family: simSun,Arial;
+    color: #de7f7f;
+}
+
+#foot .shareTitle .linkTitle{
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    float: left;
+}
+#foot .shareTitle .link{
+    float: left;
+    width: 308px;
+    height: 20px;
+}
+#foot .shareTitle .link li{
+    float: left;
+    padding-right: 15px;
+    height: 20px;
+}
+#foot .shareTitle .link li .linkIcon{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+}
+#foot .shareTitle .link li .linkName{
+    float: left;
+    font-size: 14px;
+    line-height: 20px;
+    color: #de7f7f;
+}
+#foot .shareTitle .link li .linkIcon.linkIcon01{
+    background-image: url("../img/index/foot/weixin.png");
+}
+#foot .shareTitle .link li .linkIcon.linkIcon02{
+    background-image: url("../img/index/foot/yixin.png");
+}
+#foot .shareTitle .link li .linkIcon.linkIcon03{
+    background-image: url("../img/index/foot/sina.png");
+}
+#foot .shareTitle .link li .linkIcon.linkIcon04{
+    background-image: url("../img/index/foot/QQzone.png");
+}
+
+#foot .shareTitle .link li:hover .linkIcon01{
+    background-image: url("../img/index/foot/weixinY.png");
+}
+#foot .shareTitle .link li:hover .linkIcon02{
+    background-image: url("../img/index/foot/yixinY.png");
+}
+#foot .shareTitle .link li:hover .linkIcon03{
+    background-image: url("../img/index/foot/sinaY.png");
+}
+#foot .shareTitle .link li:hover .linkIcon04{
+    background-image: url("../img/index/foot/QQzoneY.png");
+}
+#foot .shareTitle .link li:hover .linkName{
+    color: #c9b27c;
+    text-decoration: underline;
+}
+
+#foot .niePart{
+    width: 810px;
+    padding-top: 10px;
+    height: 48px;
+    margin-bottom: 20px;
+}
+#foot .niePart .guanwang{
+    float: left;
+    width: 118px;
+    height: 36px;
+    padding-top: 12px;
+}
+
+#foot .niePart .wangyiyouxi{
+    float: left;
+    width: 131px;
+    height: 36px;
+    padding-top: 12px;
+}
+#foot .niePart .linkList{
+    float: left;
+    margin-left: 45px;
+    width: 510px;
+    height: 48px;
+}
+#foot .niePart .linkList .linkUl{
+    width: 510px;
+    height: 20px;
+}
+#foot .niePart .linkList .linkUl li{
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    padding-right: 5px;
+    font-size: 12px;
+    font-family: SimSun;
+}
+#foot .niePart .linkList .linkUl li a{
+    color: #333333;
+}
+#foot .niePart .linkList .linkUl li a:hover{
+    text-decoration: underline;
+}
+#foot .niePart .linkList .shuoming{
+    float: left;
+    width: 200px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+    font-family: SimSun;
+}
+#foot .niePart .linkList .jianhu{
+    float: right;
+    width: 132px;
+    height: 26px;
+    margin-right: 30px;
+    padding-right: 5px;
+    padding-left: 5px;
+    background: #610000;
+}
+#foot .niePart .linkList .jianhu a{
+    color: #FFFFFF;
+    font-size: 12px;
+    font-family: SimSun;
+}
+#foot .niePart .linkList .jianhu a:hover{
+    text-decoration: underline;
+}
+#foot .jinggao{
+    line-height: 25px;
+    font-size: 12px;
+    color: #333333;
+    font-family: SimSun;
+}
+#foot .jinggao a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
